@@ -70,7 +70,7 @@ function LoginForm() {
           Welcome back
         </h1>
         <p className="text-sm text-stone-500 font-medium">
-          Sign in to manage your money with Money<span className="text-emerald-500 font-semibold">Flow</span>.
+          Sign in to manage your money with MoneyFlow.
         </p>
       </div>
 
