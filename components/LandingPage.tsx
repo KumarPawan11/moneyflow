@@ -58,7 +58,7 @@ function HeroTextContent({ isLoggedIn, handleScrollToSection }: HeroTextProps) {
 
       {/* Description */}
       <p className="text-base sm:text-lg text-stone-600 leading-relaxed max-w-xl">
-        moneyflow helps you track expenses, set budgets, and get AI-powered insights so you can make smarter financial decisions.
+        MoneyFlow helps you track expenses, set budgets, and get AI-powered insights so you can make smarter financial decisions.
       </p>
 
       {/* CTA Action Buttons */}
@@ -413,7 +413,7 @@ export function LandingPage({ isLoggedIn = false }: LandingPageProps) {
               <Wallet className="w-4 h-4 text-white" />
             </div>
             <span className="text-xl font-bold tracking-tight text-stone-900 font-sans">
-              money<span className="text-emerald-500">flow</span>
+              Money<span className="text-emerald-500">Flow</span>
             </span>
           </Link>
 
@@ -552,7 +552,7 @@ export function LandingPage({ isLoggedIn = false }: LandingPageProps) {
 
             {/* 3. Description */}
             <p className="text-sm text-stone-600 leading-relaxed">
-              moneyflow helps you track expenses, set budgets, and get AI-powered insights so you can make smarter financial decisions.
+              MoneyFlow helps you track expenses, set budgets, and get AI-powered insights so you can make smarter financial decisions.
             </p>
 
             {/* 4. Primary CTA & 5. Secondary CTA */}
@@ -972,7 +972,7 @@ export function LandingPage({ isLoggedIn = false }: LandingPageProps) {
               </h2>
 
               <p className="text-stone-300 text-base leading-relaxed">
-                moneyflow is currently in early access prototype testing. Try it out, explore the budget features, and help us shape the future of personal finance tracking!
+                MoneyFlow is currently in early access prototype testing. Try it out, explore the budget features, and help us shape the future of personal finance tracking!
               </p>
 
               <div className="pt-4">
@@ -1002,7 +1002,7 @@ export function LandingPage({ isLoggedIn = false }: LandingPageProps) {
                   <Wallet className="w-3.5 h-3.5 text-white" />
                 </div>
                 <span className="text-xl font-bold tracking-tight text-stone-900 font-sans">
-                  money<span className="text-emerald-500">flow</span>
+                  Money<span className="text-emerald-500">Flow</span>
                 </span>
               </Link>
               <p className="text-xs text-stone-500">
@@ -1012,7 +1012,7 @@ export function LandingPage({ isLoggedIn = false }: LandingPageProps) {
 
             {/* Copyright */}
             <div className="text-xs text-stone-400">
-              © {new Date().getFullYear()} moneyflow. All rights reserved.
+              © {new Date().getFullYear()} MoneyFlow. All rights reserved.
             </div>
 
           </div>

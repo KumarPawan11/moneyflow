@@ -18,7 +18,7 @@ const playfairSerif = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "moneyflow - Personal Finance Tracker",
+  title: "MoneyFlow - Personal Finance Tracker",
   description: "Track spending, budgets, goals, and loans in a simple monthly view.",
 };
 

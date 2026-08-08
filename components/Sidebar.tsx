@@ -26,7 +26,7 @@ export function Sidebar({ userName, userEmail }: SidebarProps) {
     <>
       {/* Top Header Navigation Bar */}
       <header className="w-full bg-[#1a1917] text-stone-300 px-4 sm:px-8 py-3.5 sticky top-0 z-40 flex items-center justify-between border-b border-[#292723] shadow-sm">
-        {/* Left Side Group: Menu Button & Moneyflow Logo Side-by-Side */}
+        {/* Left Side Group: Menu Button & MoneyFlow Logo Side-by-Side */}
         <div className="flex items-center gap-3.5">
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -37,8 +37,8 @@ export function Sidebar({ userName, userEmail }: SidebarProps) {
           </button>
 
           <Link href="/" className="flex items-center pl-1">
-            <span className="text-2xl font-bold tracking-tight text-white font-sans">money</span>
-            <span className="text-2xl font-bold tracking-tight text-emerald-500 font-sans">flow</span>
+            <span className="text-2xl font-bold tracking-tight text-white font-sans">Money</span>
+            <span className="text-2xl font-bold tracking-tight text-emerald-500 font-sans">Flow</span>
           </Link>
         </div>
       </header>
@@ -58,8 +58,8 @@ export function Sidebar({ userName, userEmail }: SidebarProps) {
               {/* Drawer Header */}
               <div className="flex items-center justify-between pb-6 mb-6 border-b border-[#292723]">
                 <Link href="/" onClick={() => setIsOpen(false)} className="flex items-center">
-                  <span className="text-xl font-bold tracking-tight text-white font-sans">money</span>
-                  <span className="text-xl font-bold tracking-tight text-emerald-500 font-sans">flow</span>
+                  <span className="text-xl font-bold tracking-tight text-white font-sans">Money</span>
+                  <span className="text-xl font-bold tracking-tight text-emerald-500 font-sans">Flow</span>
                 </Link>
                 <button
                   onClick={() => setIsOpen(false)}
