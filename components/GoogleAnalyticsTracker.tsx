@@ -8,11 +8,7 @@ const GA_MEASUREMENT_ID = "G-VGV1VWPW1C";
 declare global {
   interface Window {
     dataLayer: unknown[];
-    gtag: (
-      command: "config" | "event" | "js" | "set",
-      targetId: string | Date,
-      config?: Record<string, unknown>
-    ) => void;
+    gtag: (...args: unknown[]) => void;
   }
 }
 
@@ -24,8 +20,9 @@ function RouteChangeListener() {
     if (typeof window !== "undefined") {
       window.dataLayer = window.dataLayer || [];
       if (typeof window.gtag !== "function") {
-        window.gtag = function (...args: unknown[]) {
-          window.dataLayer.push(args);
+        window.gtag = function () {
+          // eslint-disable-next-line prefer-rest-params
+          window.dataLayer.push(arguments);
         };
       }
     }

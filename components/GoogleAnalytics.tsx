@@ -9,11 +9,7 @@ const GA_MEASUREMENT_ID = "G-VGV1VWPW1C";
 declare global {
   interface Window {
     dataLayer: unknown[];
-    gtag: (
-      command: "config" | "event" | "js" | "set",
-      targetId: string | Date,
-      config?: Record<string, unknown>
-    ) => void;
+    gtag: (...args: unknown[]) => void;
   }
 }
 
