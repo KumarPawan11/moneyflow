@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Geist, Geist_Mono, Playfair_Display } from "next/font/google";
 import { GoogleAnalyticsTracker } from "@/components/GoogleAnalyticsTracker";
 import "./globals.css";
@@ -23,8 +24,6 @@ export const metadata: Metadata = {
   description: "Track spending, budgets, goals, and loans in a simple monthly view.",
 };
 
-const GA_MEASUREMENT_ID = "G-VGV1VWPW1C";
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -35,24 +34,20 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${playfairSerif.variable} h-full antialiased`}
     >
-      <head>
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              window.gtag = gtag;
-              gtag('js', new Date());
-              gtag('config', '${GA_MEASUREMENT_ID}');
-            `,
-          }}
-        />
-      </head>
       <body className="min-h-full flex flex-col bg-[#fafaf9] text-stone-900 font-sans">
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-VGV1WVPW1C"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-VGV1WVPW1C');
+          `}
+        </Script>
         <GoogleAnalyticsTracker />
         {children}
       </body>

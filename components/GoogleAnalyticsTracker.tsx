@@ -3,7 +3,7 @@
 import { useEffect, Suspense } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 
-const GA_MEASUREMENT_ID = "G-VGV1VWPW1C";
+const GA_MEASUREMENT_ID = "G-VGV1WVPW1C";
 
 declare global {
   interface Window {
